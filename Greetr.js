@@ -1,16 +1,3 @@
-/*
-    When given a first name, last name and optional language ,
-    it generates formal and informal grettings.
-
-    Support English and Spanish languages.
-
-    Reusable library/framework.
-
-    Easy to type estructure ($, G, (), others).
-
-    Support jQuery.
-*/
-
 // Función que se invoca de inmediato, ->
 // permite un objeto global y uno de jQuery
 ;(function (global, $) {
@@ -22,24 +9,27 @@
     }
 
     // No están expuestos al mundo exterior
-    var supportedLanguages = ['Spanish', 'English'];
+    var supportedLanguages = ['Spanish', 'English', 'German'];
 
     // Saludos normales o informales
     var normalGreetings = {
         Spanish: 'Hola',
-        English: 'Hello'
+        English: 'Hello', 
+        German: 'Hallo'
     };
 
     // Saludos formales
     var formalGreetings = {
         Spanish: 'Saludos',
-        English: 'Greetings'
+        English: 'Greetings',
+        German: 'Grüße'
     };
 
     // Mensajes de inicio de sesion
     var logMessages = {
         Spanish: 'Inició Sesión',
-        English: 'Logged In'
+        English: 'Logged In',
+        German: 'In Verbindung Gebracht'
     }
 
     // Aquí se ponen los metodos que se quieran agregar ->
